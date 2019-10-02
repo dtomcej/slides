@@ -1,62 +1,8 @@
 
 [{invert}]
-= Traefik also comes in Herd
+= Traefik comes in Herd
 
 image::cluster-traefikee.png[]
-
-
-[state=invert,background-color="rgb(249,248,248)"]
-== !
-
-++++
-<video class="center" width="512" height="384" autoplay muted controls loop>
-  <source src="videos/traefik-ee-high-availability.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-++++
-
-++++
-<video class="center" width="512" height="384" autoplay muted controls loop>
-  <source src="videos/traefik-ee-safety.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-++++
-
-++++
-<video class="center" width="512" height="384" autoplay muted controls loop>
-  <source src="videos/traefik-ee-scalability.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-++++
-
-[{invert}]
-== !
-
-image::traefikee-architecture-gray-bg.png[background, size=cover]
-
-== As Simple As Traefik
-
-* Install it:
-
-[source,bash]
-----
-# Cluster Installation
-traefikeectl install \
-    --licensekey="SuperSecretLicence" \
-    --dashboard \
-    --kubernetes # Or --swarm
-----
-
-* Configure it:
-
-[source,bash]
-----
-# Routing Configuration, same as Traefik's
-traefikeectl deploy \
-    --acme.email=ssl-admin@mycompany.org
-    --acme.tlsChallenge
-    ...
-----
 
 [{invert}]
 == Free Trial
